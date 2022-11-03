@@ -1,0 +1,13 @@
+server: 
+   port: 8009
+
+
+spring:
+   datasource:
+   drvier-class-name: com.mysql.cj.jdbc.Driver
+   url: jdbc:mysql://localhost:3306/world?=serverTimezone=Asia/Seoul&charaterEncoding=UTF-8
+   username: root
+   password: 1234
+
+   
+
