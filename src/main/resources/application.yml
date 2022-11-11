@@ -8,6 +8,6 @@ spring:
    url: jdbc:mysql://localhost:3306/world?=serverTimezone=Asia/Seoul&charaterEncoding=UTF-8
    username: root
    password: 1234
-
+   
    
 
