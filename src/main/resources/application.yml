@@ -1,13 +1,34 @@
-server: 
-   port: 8009
-
-
 spring:
-   datasource:
-   drvier-class-name: com.mysql.cj.jdbc.Driver
-   url: jdbc:mysql://localhost:3306/world?=serverTimezone=Asia/Seoul&charaterEncoding=UTF-8
-   username: root
-   password: 1234
-   
-   
+  profiles:
+    active: @activatedProperties@
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
 
+
+  #datasource:
+    #driver-class-name: com.mysql.cj.jdbc.Driver
+    #url: jdbc:mysql://localhost:3306/world?=serverTimezone=Asia/Seoul&charaterEncoding=UTF-8
+    #username: root
+    #password: 1234
+
+
+server:
+  port: 8009
+  servlet:
+    session:
+      timeout: 30m
+
+
+--- #local
+spring:
+  config:
+    activate:
+      on-profile: local
+
+--- #prod
+spring:
+  config:
+    activate:
+      on-profile: prod
