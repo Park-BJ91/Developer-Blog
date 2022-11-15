@@ -2,16 +2,18 @@ spring:
   profiles:
     active: @activatedProperties@
   mvc:
+    static-path-pattern: /static/**
     view:
       prefix: /WEB-INF/views/
       suffix: .jsp
 
-
-  #datasource:
+    #datasource:
     #driver-class-name: com.mysql.cj.jdbc.Driver
     #url: jdbc:mysql://localhost:3306/world?=serverTimezone=Asia/Seoul&charaterEncoding=UTF-8
     #username: root
     #password: 1234
+
+
 
 
 server:
