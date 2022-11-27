@@ -24,6 +24,7 @@
 				<li><a href="#">Feugiat</a></li>
 				<li><a href="#">Tempus</a></li>
 				<li><a href="#">Adipiscing</a></li>
+				<li><a href="/user/login">Login</a></li>
 			</ul>
 		</nav>
 		<nav class="main">

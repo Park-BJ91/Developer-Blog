@@ -7,11 +7,16 @@ spring:
       prefix: /WEB-INF/views/
       suffix: .jsp
 
-    #datasource:
-    #driver-class-name: com.mysql.cj.jdbc.Driver
-    #url: jdbc:mysql://localhost:3306/world?=serverTimezone=Asia/Seoul&charaterEncoding=UTF-8
-    #username: root
-    #password: 1234
+
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/blog?serverTimezone=Asia/Seoul&charaterEncoding=UTF-8
+#    username: root
+#    password: 1234
+
+#mybatis:
+#  mapper-locations: classpath:mapper/*.xml
+#  config-location: classpath:mybatis-config.xml
 
 
 
