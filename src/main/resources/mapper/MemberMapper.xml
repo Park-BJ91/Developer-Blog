@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.developer.blog.mapper.MemberMapper">
+    <insert id="memberJoin">
+        INSERT INTO BLOG_USER
+        (EMAIL,PWD,ADDR,TOTAL_DAY_NO,GRADE,CRET_DT,CHG_DT)
+        VALUES
+        (#{email},#{pwd},#{addr},1,1,sysdate(),sysdate())
+    </insert>
+</mapper>

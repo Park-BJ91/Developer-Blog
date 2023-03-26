@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.developer.blog.mapper.LoginMapper">
+    <select id="chkLogin" resultType="int">
+        SELECT IFNULL(MAX(A.USER_NO) , 0) AS RESULT
+          FROM BLOG_USER A
+         WHERE A.EMAIL = #{email}
+           AND A.PWD   = #{pwd}
+    </select>
+</mapper>
